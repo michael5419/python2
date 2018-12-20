@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <h1>正向查询</h1>
+  <h2>书名:{{ book.title }}</h2>
+  <h2>作者:</h2>
+  {% for author in authors  %}
+    <h3>姓名:{{ author.name }}</h3>
+  {% endfor %}
+  <h1>反向查询</h1>
+  <h2>作者:{{ author.name }}</h2>
+  <h2>书名:</h2>
+  {% for book in books %}
+    <h3>书名:{{ book.title }}</h3>
+  {% endfor %}
+</body>
+</html>

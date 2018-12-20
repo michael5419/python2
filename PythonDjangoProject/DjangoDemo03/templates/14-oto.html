@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <h1>正向查询</h1>
+  <h2>Wife</h2>
+    <h3>姓名:{{ wife.name }}</h3>
+    <h3>年龄:{{ wife.age }}</h3>
+  <h2>Author</h2>
+    <h3>姓名:{{ wife_author.name }}</h3>
+    <h3>年龄:{{ wife_author.age }}</h3>
+  <h1>反向查询</h1>
+  <h2>Author</h2>
+    <h3>姓名:{{ author.name }}</h3>
+    <h3>邮箱:{{ author.email }}</h3>
+  <h2>Wife</h2>
+    <h3>姓名:{{ author.wife.name }}</h3>
+    <h3>年龄:{{ author_wife.age }}</h3>
+</body>
+</html>

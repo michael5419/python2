@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <h1>正向查询</h1>
+  {% for book in books %}
+    <h2>书名:{{ book.title }}</h2>
+    <h3>出版社:{{ book.publisher.name }}</h3>
+    <h3>网址:
+      <a href="{{ book.publisher.website }}">
+        {{ book.publisher.website }}
+      </a>
+    </h3>
+  {% endfor %}
+  <h1>反向查询</h1>
+  <h2>出版社:{{ pub.name }}</h2>
+  <h2>出版的书籍:</h2>
+  {% for book in pub_books %}
+    <h3>书名:{{ book.title }}</h3>
+  {% endfor %}
+</body>
+</html>
